@@ -12,3 +12,5 @@ for x in data_read:
     with open('data.json', 'a') as f:
         data = json.dumps(json_data, sort_keys=True, indent=4 * ' ')
         f.write(data + '\n')
+
+print('Finished please find data.json in this directory')

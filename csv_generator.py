@@ -14,3 +14,6 @@ with open('data.csv', 'w', newline='') as f:
 	for x in data_read:
 		y = x.split(',')
 		thewriter.writerow([y[0].strip(), y[1].strip(), y[2].strip(), y[3].strip(), y[4].strip()])
+
+print('Finished please find data.csv in this directory')
+  

@@ -85,4 +85,6 @@ for x in range(0, num):
 		ph_num = phone_list[x].strip()
 		data.write(girl_list[x].strip() + ',' + email + ',' + address + ',' + ph_num + '\n')
 
+print("Finished please use either csv_gnerator.py or json_writer.py!")
+
 
