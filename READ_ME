@@ -2,6 +2,13 @@ Name: Python Data-Generator
 
 Author: John Verber
 
+Version 1.1
+
+It still works the same.  I just added a main.py.  And some success messages.
+
+In order to run this simply run it with python main.py.  See below for more description.
+
+
 Version: 1.0
 
 Description: This script will generate 'people' data for between 1 to 1000 distinct records.  
