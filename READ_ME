@@ -2,12 +2,16 @@ Name: Python Data-Generator
 
 Author: John Verber
 
+Version 1.1
+
+It still works the same.  I just added a main.py.  And some success messages.
+
+In order to run this simply run it with python main.py.  See below for more description.
 
 
 Version: 1.0
 
-Description: Work in progress.  Current only works on windows so far.   Haven't tested on Linux but technically should work. 
-Need to make an IDE for it as well, so if you know PyQT dude or dudette hit me up.  This script will generate 'people' data for between 1 to 1000 distinct records.  
+Description: This script will generate 'people' data for between 1 to 1000 distinct records.  
 It will output the data in the following formats: .txt, .csv, .json.  
 The data per record is as follows: Last Name, First Name, Email, Address, and Phone number.  
 
@@ -20,19 +24,15 @@ I ran this with Python 3.6.5, but it should run on Python 2.7 as well.
 When I get around to it I will test it on Python 2.7 and update. 
 
 Operating Instructions:
-1) Run data_generator.py first, if you do not nothing else will work.  Just use the command:
-    python data_genereator.py.  It will ask you how many records you want 1-1000.
+1) Run data_generator.py first, if you do not nothing else will work
     You can simply run data_generator.py with no arguments and it will ask you how many records you'd like.
     Or you can add the number of records you need as an argument:
         Ex:  python data_generator.py 500
     Running this script will result in data.txt (which csv_generator.py and json_writer.py uses)
 
-2)IMPORTANT!  You are not done.  One person rant data_generator.py and stopped.  You need to do the following: 
-   Run either csv_generator.py or json_writer.py.  
+2) Run either csv_generator.py or json_writer.py.  
    Running csv_generator.py will result in data.csv
    Running json_writer.py will result in data.json
-   THis will produce your csv file or json file. The text file is created from running
-   data_generator.py, just grab the text file.  These will be in the same folder as our python programs. 
 
 Note I am planning on making a bat file for Windows and a bash file to run on Linux and MacOs.
 When I finish those I will update
