@@ -1,6 +1,7 @@
 import sys
 import random
-import csv
+import csv_generator
+import json_writer
 
 #read files
 female_done = open('female_done.txt', 'r')
@@ -85,6 +86,16 @@ for x in range(0, num):
 		ph_num = phone_list[x].strip()
 		data.write(girl_list[x].strip() + ',' + email + ',' + address + ',' + ph_num + '\n')
 
-print("Finished please use either csv_gnerator.py or json_writer.py!")
+#choose to print out in csv or json
+def printData():
+	answer = input('Please choose 1 for csv or 2 for jsson output file: ')
+	if(answer == '1'):
+		csv_generator.csv_write()
+	elif(answer == '2'):
+		json_writer.json_write()
+	else:
+		printData()
+
+printData()
 
 
