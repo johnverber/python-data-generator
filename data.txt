@@ -1,10 +1,5 @@
-Duke,Alexa,Victor.Robles@yahoo.com,9746 Broad Avenue  Niles MI 49120,(472) 846-2895
-Tran,Brenda,Brenda.Tran@whatever.com,9740 Kingston St.  Winona MN 55987,(836) 820-4948
+Duke,Alexa,Alexa.Duke@yahoo.com,9746 Broad Avenue  Niles MI 49120,(472) 846-2895
+Tran,Brenda,Brenda.Tran@yahoo.com,9740 Kingston St.  Winona MN 55987,(836) 820-4948
 Weeks,Mia,Mia.Weeks@yahoo.com,7458 Bay Street  Mesa AZ 85203,(117) 938-4386
-Marquez,Luz,Kale.Hays@whatever.com,9416 Ashley Ave.  Rapid City SD 57701,(398) 977-7620
-Terry,Tatum,Tatum.Terry@hotmail.com,505 Newbridge Street  Bayonne NJ 07002,(730) 723-2997
-Deleon,Morgan,Morgan.Deleon@hotmail.com,69 Oak St.  Bountiful UT 84010,(408) 171-4340
-Nunez,Piper,Jaxson.Burch@whatever.com,956 N. Main Drive  Mount Pleasant SC 29464,(285) 248-9774
-Bryant,Linda,Malachi.Bolton@hotmail.com,797 West Glenridge Avenue  Amarillo TX 79106,(824) 340-9271
-Bush,Saniyah,Heath.Rivers@yahoo.com,8811 Glendale Rd.  Riverview FL 33569,(861) 573-9547
-Shepard,Armani,Urijah.Daugherty@yahoo.com,278 Tanglewood Lane  Yonkers NY 10701,(671) 798-3221
+Marquez,Luz,Kale.Hays@yahoo.com,9416 Ashley Ave.  Rapid City SD 57701,(398) 977-7620
+Terry,Tatum,Tatum.Terry@yahoo.com,505 Newbridge Street  Bayonne NJ 07002,(730) 723-2997
