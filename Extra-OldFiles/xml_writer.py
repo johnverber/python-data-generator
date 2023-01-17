@@ -7,7 +7,7 @@ csvData = csv.reader(open(csvFile))
 xmlData = open(xmlFile, 'w')
 xmlData.write('<?xml version="1.0"?>' + "\n")
 # there must be only one top-level tag
-xmlData.write('<csv_data>' + "\n")
+xmlData.write('<xml_data>' + "\n")
 
 rowNum = 0
 for row in csvData:
@@ -25,5 +25,5 @@ for row in csvData:
             
     rowNum +=1
 
-xmlData.write('</csv_data>' + "\n")
+xmlData.write('</xml_data>' + "\n")
 xmlData.close()

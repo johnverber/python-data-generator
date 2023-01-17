@@ -2,8 +2,6 @@ import sys
 import random
 import csv
 import json
-import csv_writer_module
-import json_writer_module
 
 #read files
 female_done = open('female_done.txt', 'r')
@@ -96,10 +94,31 @@ print("finished!")
 def printData():
 	answer = input('Please choose 1 for csv or 2 for json output file: ')
 	if(answer == '1'):
-		csv_writer_module.csv_run()
-				
+		#csv_generator.csv_write('/Users/johnverber/Documents/GitHub/python-data-generator/data.txt','/Users/johnverber/Documents/GitHub/python-data-generator/data.csv')
+		data_read = open('data.txt', 'r')
+
+		#process data and write to csv file
+		with open('data.csv', 'w', newline='') as f:
+			thewriter = csv.writer(f)
+
+			#thewriter.writerow(['Last', 'First', 'Email', 'Address', 'Phone'])
+			for x in data_read:
+				y = x.split(',')
+				thewriter.writerow([y[0].strip(), y[1].strip(), y[2].strip(), y[3].strip(), y[4].strip()])
 	elif(answer == '2'):
-		json_writer_module.json_run()
+		#files to read from 
+		data_read = open('data.txt', 'r')
+		print(data_read)
+
+		#process data and write to json file
+		for x in data_read:
+			y = x.split(',')
+			
+			json_data = {"First" : y[0].strip(), "Last" : y[1].strip(), "Email" : y[2].strip(), "Address" : y[3].strip(), "Phone" : y[4].strip() }
+			
+			with open('data.json', 'a') as f:
+				data = json.dumps(json_data, sort_keys=True, indent=4 * ' ')
+				f.write(data + '\n')
 	else:
 		printData()
 
