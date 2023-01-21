@@ -1,7 +1,5 @@
 import sys
 import random
-import csv
-import json
 import csv_writer_module
 import json_writer_module
 
@@ -88,18 +86,22 @@ for x in range(0, num):
 		ph_num = phone_list[x].strip()
 		data.write(girl_list[x].strip() + ',' + email + ',' + address + ',' + ph_num + '\n')
 
+female_done.close()
+male_done.close()
+phone.close()
+street.close()
 data.close()
-
-print("finished!")
-
+print('Data collection finished!')
 #choose to print out in csv or json
 def printData():
 	answer = input('Please choose 1 for csv or 2 for json output file: ')
 	if(answer == '1'):
 		csv_writer_module.csv_run()
+		print('Please find your data in "data.csv" in the cwd!!!')
 				
 	elif(answer == '2'):
 		json_writer_module.json_run()
+		print('Please find your data in "data.json" in the cwd!!!')
 	else:
 		printData()
 
